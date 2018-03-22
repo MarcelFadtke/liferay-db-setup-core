@@ -136,7 +136,7 @@ public final class SetupUsers {
             LOG.info("User " + setupUser.getEmailAddress() + " created");
 
         } catch (Exception ex) {
-            LOG.error("Error by adding user " + setupUser.getEmailAddress());
+            LOG.error("Error by adding user " + setupUser.getEmailAddress(), ex);
         }
 
         return liferayUser;
